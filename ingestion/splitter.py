@@ -41,6 +41,11 @@ class DocumentSplitter:
         chunks = self.text_splitter.split_documents(documents)
 
         for index, chunk in enumerate(chunks, start=1):
-            chunk.metadata["chunk_id"] = index
+            chunk.metadata["chunk_id"] = (
+                f"{chunk.metadata['document_id']}"
+                f"_page_{chunk.metadata['page']}"
+                f"_chunk_{index}"
+            )
+            chunk.metadata["chunk_length"] = len(chunk.page_content)
 
         return chunks
