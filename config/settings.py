@@ -18,3 +18,4 @@ SIMILARITY_THRESHOLD = 0.75
 EMBEDDING_MODEL = "embed-english-v3.0"
 LLM_MODEL = "llama-3.3-70b-versatile"
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
