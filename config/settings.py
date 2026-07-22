@@ -13,9 +13,9 @@ CHUNK_SIZE = 800
 CHUNK_OVERLAP = 150
 
 TOP_K = 5
-SIMILARITY_THRESHOLD = 0.75
+SIMILARITY_THRESHOLD = 2.0
 
 EMBEDDING_MODEL = "embed-english-v3.0"
-LLM_MODEL = "llama-3.3-70b-versatile"
+LLM_MODEL = "mistral-medium-latest"
 COHERE_API_KEY = os.getenv("COHERE_API_KEY")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")

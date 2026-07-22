@@ -1,3 +1,4 @@
+import logging
 from typing import List
 
 from langchain_core.documents import Document
@@ -7,6 +8,8 @@ from config.settings import (
     CHUNK_OVERLAP,
     CHUNK_SIZE,
 )
+
+logger = logging.getLogger(__name__)
 
 
 class DocumentSplitter:
@@ -33,19 +36,70 @@ class DocumentSplitter:
             ],
         )
 
+        logger.info(
+            "DocumentSplitter initialized "
+            "(chunk_size=%d, chunk_overlap=%d)",
+            chunk_size,
+            chunk_overlap,
+        )
+
     def split_documents(
         self,
         documents: List[Document],
     ) -> List[Document]:
+        """
+        Splits documents into chunks and enriches each chunk
+        with additional metadata.
 
-        chunks = self.text_splitter.split_documents(documents)
+        Args:
+            documents: List of LangChain documents.
 
-        for index, chunk in enumerate(chunks, start=1):
-            chunk.metadata["chunk_id"] = (
-                f"{chunk.metadata['document_id']}"
-                f"_page_{chunk.metadata['page']}"
-                f"_chunk_{index}"
+        Returns:
+            List of chunked documents.
+        """
+
+        if not documents:
+            logger.warning(
+                "No documents provided for splitting."
             )
-            chunk.metadata["chunk_length"] = len(chunk.page_content)
+            return []
 
-        return chunks
+        logger.info(
+            "Splitting %d documents.",
+            len(documents),
+        )
+
+        try:
+            chunks = self.text_splitter.split_documents(
+                documents
+            )
+
+            logger.info(
+                "Generated %d chunks.",
+                len(chunks),
+            )
+
+            for index, chunk in enumerate(chunks, start=1):
+
+                chunk.metadata["chunk_id"] = (
+                    f"{chunk.metadata['document_id']}"
+                    f"_page_{chunk.metadata['page']}"
+                    f"_chunk_{index}"
+                )
+
+                chunk.metadata["chunk_length"] = (
+                    len(chunk.page_content)
+                )
+
+            logger.info(
+                "Metadata added to all chunks."
+            )
+
+            return chunks
+
+        except Exception as e:
+            logger.exception(
+                "Document splitting failed: %s",
+                e,
+            )
+            raise
