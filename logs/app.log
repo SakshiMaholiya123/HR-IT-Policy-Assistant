@@ -1,0 +1,753 @@
+2026-07-22 11:06:37 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 11:06:38 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 11:06:38 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 11:06:38 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 11:06:38 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 11:06:38 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 11:06:39 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 11:06:39 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 11:06:40 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 11:06:40 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 11:06:40 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 11:06:41 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 11:06:42 | INFO | agents.tool_registry | Leave Calculator Tool invoked.
+2026-07-22 11:06:42 | INFO | utils.audit_logger | TOOL INVOKED: Leave Calculator Tool
+2026-07-22 11:06:42 | INFO | agents.tool_registry | Retriever Tool invoked for query: earned leave accrual rate
+2026-07-22 11:06:42 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 11:06:42 | INFO | agents.tool_registry | Retriever Tool invoked for query: earned leave policy
+2026-07-22 11:06:42 | INFO | tools.calculator_tool | Leave balance calculated: 15.00
+2026-07-22 11:06:42 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 11:06:42 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 11:06:42 | INFO | agents.tool_registry | Leave Balance: 15.00
+2026-07-22 11:06:42 | INFO | tools.retriever_tool | Query: earned leave accrual rate
+2026-07-22 11:06:42 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 11:06:42 | INFO | ingestion.retriever | Retrieving documents for query: earned leave accrual rate
+2026-07-22 11:06:42 | INFO | tools.retriever_tool | Query: earned leave policy
+2026-07-22 11:06:42 | INFO | ingestion.retriever | Retrieving documents for query: earned leave policy
+2026-07-22 11:06:43 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 11:06:43 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 11:06:43 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 11:06:43 | INFO | ingestion.retriever | 0 chunks passed the grounding threshold.
+2026-07-22 11:06:43 | WARNING | tools.retriever_tool | No documents passed the grounding threshold.
+2026-07-22 11:06:43 | INFO | agents.tool_registry | Retriever returned 347 chunk(s).
+2026-07-22 11:06:43 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 11:06:43 | INFO | ingestion.retriever | 0 chunks passed the grounding threshold.
+2026-07-22 11:06:43 | WARNING | tools.retriever_tool | No documents passed the grounding threshold.
+2026-07-22 11:06:43 | INFO | agents.tool_registry | Retriever returned 347 chunk(s).
+2026-07-22 11:14:43 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 11:14:43 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 11:14:43 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 11:14:43 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 11:14:43 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 11:14:43 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 11:14:44 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 11:14:44 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 11:14:45 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 11:14:45 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 11:14:45 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 11:14:46 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 11:14:46 | INFO | agents.chat_service | Successfully processed query for session 'session_001'.
+2026-07-22 11:46:16 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 11:46:18 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 11:46:18 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 11:46:18 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 11:46:18 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 11:46:18 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 11:46:21 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 11:46:21 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 11:46:22 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 11:46:22 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 11:46:22 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 11:46:23 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 11:46:23 | INFO | agents.tool_registry | Retriever Tool invoked for query: earned leaves policy
+2026-07-22 11:46:23 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 11:46:23 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 11:46:23 | INFO | tools.retriever_tool | Query: earned leaves policy
+2026-07-22 11:46:23 | INFO | ingestion.retriever | Retrieving documents for query: earned leaves policy
+2026-07-22 11:46:24 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 11:46:24 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 11:46:24 | INFO | ingestion.retriever | 0 chunks passed the grounding threshold.
+2026-07-22 11:46:24 | WARNING | tools.retriever_tool | No documents passed the grounding threshold.
+2026-07-22 11:46:24 | INFO | agents.tool_registry | Retriever returned 0 chunk(s).
+2026-07-22 11:46:24 | WARNING | agents.tool_registry | No policy information found for query: earned leaves policy
+2026-07-22 11:46:24 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 11:46:24 | INFO | agents.chat_service | Successfully processed query for session 'session_001'.
+2026-07-22 11:49:30 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 11:49:31 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 11:49:31 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 11:49:31 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 11:49:31 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 11:49:31 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 11:49:32 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 11:49:32 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 11:49:32 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 11:49:32 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 11:49:32 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 11:49:33 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 11:49:33 | INFO | agents.tool_registry | Retriever Tool invoked for query: earned leaves policy for employees
+2026-07-22 11:49:33 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 11:49:33 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 11:49:33 | INFO | tools.retriever_tool | Query: earned leaves policy for employees
+2026-07-22 11:49:33 | INFO | ingestion.retriever | Retrieving documents for query: earned leaves policy for employees
+2026-07-22 11:49:33 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 11:49:34 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 11:49:34 | INFO | ingestion.retriever | Distance Score: 0.7516 | 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 11:49:34 | INFO | ingestion.retriever | Distance Score: 0.8633 | 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 11:49:34 | INFO | ingestion.retriever | Distance Score: 0.9298 | 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 11:49:34 | INFO | ingestion.retriever | Distance Score: 0.9981 | 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 11:49:34 | INFO | ingestion.retriever | Distance Score: 1.0834 | 06_Employee_Benefits_Guide.pdf
+2026-07-22 11:49:34 | INFO | ingestion.retriever | 0 chunks passed the grounding threshold.
+2026-07-22 11:49:34 | WARNING | tools.retriever_tool | No documents passed the grounding threshold.
+2026-07-22 11:49:34 | INFO | agents.tool_registry | Retriever returned 0 chunk(s).
+2026-07-22 11:49:34 | WARNING | agents.tool_registry | No policy information found for query: earned leaves policy for employees
+2026-07-22 11:49:34 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 11:49:34 | INFO | agents.chat_service | Successfully processed query for session 'session_001'.
+2026-07-22 12:01:28 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 12:01:28 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 12:01:28 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 12:01:28 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 12:01:28 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 12:01:28 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 12:01:28 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 12:01:28 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 12:01:29 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 12:01:29 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 12:01:29 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 12:01:29 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 12:01:29 | INFO | agents.tool_registry | Retriever Tool invoked for query: earned leaves policy
+2026-07-22 12:01:29 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 12:01:29 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 12:01:29 | INFO | tools.retriever_tool | Query: earned leaves policy
+2026-07-22 12:01:29 | INFO | ingestion.retriever | Retrieving documents for query: earned leaves policy
+2026-07-22 12:01:30 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 12:01:30 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 12:01:30 | INFO | ingestion.retriever | Distance Score: 0.8291 | 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 12:01:30 | INFO | ingestion.retriever | Distance Score: 0.9613 | 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 12:01:30 | INFO | ingestion.retriever | Distance Score: 1.0558 | 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 12:01:30 | INFO | ingestion.retriever | Distance Score: 1.1474 | 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 12:01:30 | INFO | ingestion.retriever | Distance Score: 1.2596 | 06_Employee_Benefits_Guide.pdf
+2026-07-22 12:01:30 | INFO | ingestion.retriever | 0 chunks passed the grounding threshold.
+2026-07-22 12:01:30 | WARNING | tools.retriever_tool | No documents passed the grounding threshold.
+2026-07-22 12:01:30 | INFO | agents.tool_registry | Retriever returned 0 chunk(s).
+2026-07-22 12:01:30 | WARNING | agents.tool_registry | No policy information found for query: earned leaves policy
+2026-07-22 12:01:31 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 12:01:31 | INFO | agents.chat_service | Added 0 source citation(s).
+2026-07-22 12:01:31 | INFO | agents.chat_service | Successfully processed query for session 'session_001'.
+2026-07-22 12:03:21 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 12:03:21 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 12:03:21 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 12:03:21 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 12:03:21 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 12:03:21 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 12:03:22 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 12:03:22 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 12:03:22 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 12:03:22 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 12:03:22 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 12:03:23 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 12:03:23 | INFO | agents.chat_service | Added 0 source citation(s).
+2026-07-22 12:03:23 | INFO | agents.chat_service | Successfully processed query for session 'session_001'.
+2026-07-22 12:03:36 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 12:03:36 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 12:03:36 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 12:03:36 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 12:03:36 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 12:03:36 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 12:03:37 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 12:03:37 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 12:03:37 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 12:03:37 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 12:03:37 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 12:03:38 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 12:03:38 | INFO | agents.chat_service | Added 0 source citation(s).
+2026-07-22 12:03:38 | INFO | agents.chat_service | Successfully processed query for session 'session_001'.
+2026-07-22 12:06:52 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 12:06:52 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 12:06:52 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 12:06:52 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 12:06:52 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 12:06:52 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 12:06:53 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 12:06:53 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 12:06:53 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 12:06:53 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 12:06:53 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 12:06:54 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 12:06:54 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 12:12:36 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 12:12:36 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 12:12:36 | INFO | agents.chat_service | Initializing Chat Service...
+2026-07-22 12:12:36 | INFO | agents.chat_service | Received query for session 'session_001'.
+2026-07-22 12:12:36 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 12:12:36 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 12:12:36 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 12:12:36 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 12:12:36 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 12:12:36 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 12:12:36 | INFO | agents.chat_service | Running Policy Agent...
+2026-07-22 12:12:37 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 12:12:37 | INFO | agents.chat_service | Added 0 source citation(s).
+2026-07-22 12:12:37 | INFO | agents.chat_service | Successfully processed query for session 'session_001'.
+2026-07-22 12:37:43 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 12:37:43 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 12:40:20 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 12:40:21 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 12:41:17 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 12:41:17 | INFO | agents.tool_registry | Leave Calculator Tool invoked.
+2026-07-22 12:41:17 | INFO | utils.audit_logger | TOOL INVOKED: Leave Calculator Tool
+2026-07-22 12:42:37 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 12:42:37 | INFO | agents.tool_registry | Completed Months Tool invoked.
+2026-07-22 12:42:37 | INFO | utils.audit_logger | TOOL INVOKED: Completed Months Tool
+2026-07-22 12:42:37 | INFO | agents.tool_registry | Retriever Tool invoked for query: leave accrual rate
+2026-07-22 12:42:37 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 12:42:37 | INFO | agents.tool_registry | Retriever Tool invoked for query: leave accrual policy
+2026-07-22 12:42:37 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 12:53:25 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 12:53:31 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 12:53:31 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 12:53:34 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 12:53:39 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 12:53:41 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 12:53:41 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 12:53:41 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 12:55:45 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 12:55:47 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 12:55:47 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 12:55:49 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 12:55:49 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 12:55:50 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 12:56:39 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:24:46 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 14:24:47 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 14:24:47 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 14:24:50 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 14:24:50 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 14:24:50 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 14:25:09 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:27 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:25:27 | INFO | agents.tool_registry | Retriever Tool invoked for query: company policy on employee leave and notice period
+2026-07-22 14:25:27 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 14:32:00 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 14:32:01 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 14:32:01 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 14:32:04 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 14:32:04 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 14:32:04 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 14:32:04 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 14:32:21 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 14:32:21 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leave entitlement policy for employees
+2026-07-22 14:32:21 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 14:58:43 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 14:58:44 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 14:58:44 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 14:58:45 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 14:58:45 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 15:00:29 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:00:29 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leave entitlement policy Nimbus Technologies Pvt. Ltd.
+2026-07-22 15:00:29 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:00:29 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:00:29 | INFO | tools.retriever_tool | Query: annual leave entitlement policy Nimbus Technologies Pvt. Ltd.
+2026-07-22 15:00:29 | INFO | ingestion.retriever | Retrieving documents for query: annual leave entitlement policy Nimbus Technologies Pvt. Ltd.
+2026-07-22 15:00:30 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Distance Score: 0.3433 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Score: 0.3433 | Threshold Passed: True
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Distance Score: 0.6895 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Score: 0.6895 | Threshold Passed: True
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Distance Score: 0.7377 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Score: 0.7377 | Threshold Passed: True
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Distance Score: 0.7636 | Source: 02_Remote_and_Hybrid_Work_Policy.pdf
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Score: 0.7636 | Threshold Passed: True
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Distance Score: 0.8088 | Source: 04_Travel_and_Expense_Policy.pdf
+2026-07-22 15:00:30 | INFO | ingestion.retriever | Score: 0.8088 | Threshold Passed: True
+2026-07-22 15:00:30 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:00:30 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:00:30 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.3433
+2026-07-22 15:00:33 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:00:58 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:00:58 | INFO | agents.tool_registry | Retriever Tool invoked for query: HR policies
+2026-07-22 15:00:58 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:00:58 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:00:58 | INFO | tools.retriever_tool | Query: HR policies
+2026-07-22 15:00:58 | INFO | ingestion.retriever | Retrieving documents for query: HR policies
+2026-07-22 15:00:58 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Distance Score: 0.9451 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Score: 0.9451 | Threshold Passed: True
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Distance Score: 1.0058 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Score: 1.0058 | Threshold Passed: True
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Distance Score: 1.0587 | Source: 02_Remote_and_Hybrid_Work_Policy.pdf
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Score: 1.0587 | Threshold Passed: True
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Distance Score: 1.0780 | Source: 03_Code_of_Conduct.pdf
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Score: 1.0780 | Threshold Passed: True
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Distance Score: 1.1042 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:00:59 | INFO | ingestion.retriever | Score: 1.1042 | Threshold Passed: True
+2026-07-22 15:00:59 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:00:59 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:00:59 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.9451
+2026-07-22 15:01:00 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:01:28 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 15:01:28 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 15:09:11 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 15:09:11 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 15:09:11 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 15:09:11 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 15:09:12 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 15:09:12 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 15:09:12 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 15:09:12 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 15:09:12 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 15:09:13 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 15:09:13 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 15:14:31 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 15:14:31 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 15:14:31 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 15:14:33 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 15:14:33 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 15:14:34 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 15:14:34 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 15:15:22 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 15:34:13 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 15:34:17 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 15:34:17 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 15:34:19 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 15:34:19 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 15:34:20 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 15:34:20 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 15:35:06 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:35:07 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leaves employees entitled to
+2026-07-22 15:35:07 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:35:07 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:35:07 | INFO | tools.retriever_tool | Query: annual leaves employees entitled to
+2026-07-22 15:35:07 | INFO | ingestion.retriever | Retrieving documents for query: annual leaves employees entitled to
+2026-07-22 15:35:08 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Distance Score: 0.9634 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Score: 0.9634 | Threshold Passed: True
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Distance Score: 0.9901 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Score: 0.9901 | Threshold Passed: True
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Distance Score: 0.9947 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Score: 0.9947 | Threshold Passed: True
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Distance Score: 1.0873 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Score: 1.0873 | Threshold Passed: True
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Distance Score: 1.1198 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:35:09 | INFO | ingestion.retriever | Score: 1.1198 | Threshold Passed: True
+2026-07-22 15:35:09 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:35:09 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:35:09 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.9634
+2026-07-22 15:35:11 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:35:11 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leave entitlement for employees
+2026-07-22 15:35:11 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:35:11 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:35:11 | INFO | tools.retriever_tool | Query: annual leave entitlement for employees
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Retrieving documents for query: annual leave entitlement for employees
+2026-07-22 15:35:11 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Distance Score: 0.7980 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Score: 0.7980 | Threshold Passed: True
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Distance Score: 0.8134 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Score: 0.8134 | Threshold Passed: True
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Distance Score: 0.9991 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Score: 0.9991 | Threshold Passed: True
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Distance Score: 1.0033 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Score: 1.0033 | Threshold Passed: True
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Distance Score: 1.0543 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:35:11 | INFO | ingestion.retriever | Score: 1.0543 | Threshold Passed: True
+2026-07-22 15:35:11 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:35:11 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:35:11 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.7980
+2026-07-22 15:37:37 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 15:37:38 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 15:37:38 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 15:37:38 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 15:37:40 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 15:37:40 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 15:37:40 | DEBUG | chromadb.config | Starting component System
+2026-07-22 15:37:40 | DEBUG | chromadb.config | Starting component Posthog
+2026-07-22 15:37:40 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 15:37:40 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 15:37:40 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 15:37:40 | DEBUG | asyncio | Using proactor: IocpProactor
+2026-07-22 15:37:40 | DEBUG | httpcore.connection | connect_tcp.started host='api.mistral.ai' port=443 local_address=None timeout=300.0 socket_options=None
+2026-07-22 15:37:40 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001F671828C20>
+2026-07-22 15:37:40 | DEBUG | httpcore.connection | start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F670524A70> server_hostname='api.mistral.ai' timeout=300.0
+2026-07-22 15:37:40 | DEBUG | httpcore.connection | start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001F67180AE90>
+2026-07-22 15:37:40 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:37:40 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:37:40 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:37:40 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:37:40 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 22 Jul 2026 10:07:42 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'mistral-correlation-id', b'019f894b-9df9-7c87-be5d-19d87aad8d2c'), (b'x-kong-request-id', b'019f894b-9df9-7c87-be5d-19d87aad8d2c'), (b'x-max-retry-attempts-reached', b'false'), (b'x-ratelimit-limit-tokens-minute', b'25000'), (b'x-ratelimit-remaining-tokens-minute', b'23434'), (b'x-ratelimit-tokens-query-cost', b'1566'), (b'x-ratelimit-limit-req-minute', b'50'), (b'x-ratelimit-remaining-req-minute', b'49'), (b'x-envoy-upstream-service-time', b'546'), (b'Server', b'cloudflare'), (b'access-control-allow-origin', b'*'), (b'x-kong-upstream-latency', b'547'), (b'x-kong-proxy-latency', b'17'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=JyrJQFa_zp4Za7HoQ8MDf_XhZeGenSNBds8I1w1NPAU-1784714861.9217734-1.0.1.1-bH90J_PhWPoqSoE2jMCeiT6Ib2LiK2MekOBIuC4zVb1x2j62lZDFIPvrHBBNxMjopUZNkc25XuOBzQRgxNbJkffWU_Tj3znUqszHNVsSEp.nf4gmFoaJbP5GZqOhTlDr; HttpOnly; SameSite=None; Secure; Path=/; Domain=mistral.ai; Expires=Wed, 22 Jul 2026 10:37:42 GMT'), (b'Strict-Transport-Security', b'max-age=15552000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'a1f1a3cf0bcd1849-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-22 15:37:41 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:37:41 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leaves employees entitled to
+2026-07-22 15:37:41 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:37:41 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:37:41 | INFO | tools.retriever_tool | Query: annual leaves employees entitled to
+2026-07-22 15:37:41 | INFO | ingestion.retriever | Retrieving documents for query: annual leaves employees entitled to
+2026-07-22 15:37:41 | DEBUG | httpcore.connection | connect_tcp.started host='api.cohere.com' port=443 local_address=None timeout=300 socket_options=None
+2026-07-22 15:37:41 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F671994590>
+2026-07-22 15:37:41 | DEBUG | httpcore.connection | start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F670542750> server_hostname='api.cohere.com' timeout=300
+2026-07-22 15:37:41 | DEBUG | httpcore.connection | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F671872C10>
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:37:41 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'access-control-expose-headers', b'X-Debug-Trace-ID'), (b'cache-control', b'no-cache, no-store, no-transform, must-revalidate, private, max-age=0'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'expires', b'Thu, 01 Jan 1970 00:00:00 GMT'), (b'num_chars', b'35'), (b'num_tokens', b'5'), (b'pragma', b'no-cache'), (b'vary', b'Origin,Accept-Encoding'), (b'x-accel-expires', b'0'), (b'x-debug-trace-id', b'28d8498e267d7e9489fa0af8632b40e3'), (b'x-endpoint-monthly-call-limit', b'1000'), (b'x-trial-endpoint-call-limit', b'100'), (b'x-trial-endpoint-call-remaining', b'99'), (b'date', b'Wed, 22 Jul 2026 10:07:43 GMT'), (b'x-envoy-upstream-service-time', b'47'), (b'server', b'envoy'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-07-22 15:37:42 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Distance Score: 0.9633 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Score: 0.9633 | Threshold Passed: True
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Distance Score: 0.9894 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Score: 0.9894 | Threshold Passed: True
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Distance Score: 0.9944 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Score: 0.9944 | Threshold Passed: True
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Distance Score: 1.0864 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Score: 1.0864 | Threshold Passed: True
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Distance Score: 1.1198 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:37:42 | INFO | ingestion.retriever | Score: 1.1198 | Threshold Passed: True
+2026-07-22 15:37:42 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:37:42 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:37:42 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.9633
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:37:42 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 22 Jul 2026 10:07:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'mistral-correlation-id', b'019f894b-a42b-7c46-a714-581df0862c95'), (b'x-kong-request-id', b'019f894b-a42b-7c46-a714-581df0862c95'), (b'x-max-retry-attempts-reached', b'false'), (b'x-ratelimit-limit-tokens-minute', b'25000'), (b'x-ratelimit-remaining-tokens-minute', b'21787'), (b'x-ratelimit-tokens-query-cost', b'1647'), (b'x-ratelimit-limit-req-minute', b'50'), (b'x-ratelimit-remaining-req-minute', b'48'), (b'x-envoy-upstream-service-time', b'456'), (b'Server', b'cloudflare'), (b'access-control-allow-origin', b'*'), (b'x-kong-upstream-latency', b'459'), (b'x-kong-proxy-latency', b'12'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Strict-Transport-Security', b'max-age=15552000; includeSubDomains; preload'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'a1f1a3d90c6c1849-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-22 15:37:43 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:37:43 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leave entitlement for employees
+2026-07-22 15:37:43 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:37:43 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:37:43 | INFO | tools.retriever_tool | Query: annual leave entitlement for employees
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Retrieving documents for query: annual leave entitlement for employees
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'access-control-expose-headers', b'X-Debug-Trace-ID'), (b'cache-control', b'no-cache, no-store, no-transform, must-revalidate, private, max-age=0'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'expires', b'Thu, 01 Jan 1970 00:00:00 GMT'), (b'num_chars', b'38'), (b'num_tokens', b'7'), (b'pragma', b'no-cache'), (b'vary', b'Origin,Accept-Encoding'), (b'x-accel-expires', b'0'), (b'x-debug-trace-id', b'9d884e39df31b597fc1ccf0aaac3ae70'), (b'x-endpoint-monthly-call-limit', b'1000'), (b'x-trial-endpoint-call-limit', b'100'), (b'x-trial-endpoint-call-remaining', b'98'), (b'date', b'Wed, 22 Jul 2026 10:07:44 GMT'), (b'x-envoy-upstream-service-time', b'40'), (b'server', b'envoy'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-07-22 15:37:43 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:37:43 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Distance Score: 0.7969 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Score: 0.7969 | Threshold Passed: True
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Distance Score: 0.8143 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Score: 0.8143 | Threshold Passed: True
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Distance Score: 0.9975 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Score: 0.9975 | Threshold Passed: True
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Distance Score: 1.0037 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Score: 1.0037 | Threshold Passed: True
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Distance Score: 1.0545 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:37:43 | INFO | ingestion.retriever | Score: 1.0545 | Threshold Passed: True
+2026-07-22 15:37:43 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:37:43 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:37:43 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.7969
+2026-07-22 15:37:54 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 15:37:56 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 15:37:56 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 15:37:56 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 15:37:59 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 15:37:59 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 15:37:59 | DEBUG | chromadb.config | Starting component System
+2026-07-22 15:37:59 | DEBUG | chromadb.config | Starting component Posthog
+2026-07-22 15:37:59 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 15:37:59 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 15:37:59 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 15:37:59 | DEBUG | asyncio | Using proactor: IocpProactor
+2026-07-22 15:38:00 | DEBUG | httpcore.connection | connect_tcp.started host='api.mistral.ai' port=443 local_address=None timeout=300.0 socket_options=None
+2026-07-22 15:38:00 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000011F03B58C20>
+2026-07-22 15:38:00 | DEBUG | httpcore.connection | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011F02854A70> server_hostname='api.mistral.ai' timeout=300.0
+2026-07-22 15:38:00 | DEBUG | httpcore.connection | start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000011F03B3AE90>
+2026-07-22 15:38:00 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:00 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:38:00 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:38:00 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:38:00 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 22 Jul 2026 10:08:02 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'set-cookie', b'__cf_bm=21ixy7rRc8UyDuBOCw8QB6l9gIPeezFwHoGh9cqbl_0-1784714881.2005913-1.0.1.1-hQ5KhYbr7i4kJ6fVuYD1vfSVxWZcjJa.mmAoD.SGC3wOKECzWlLD9992G8Dh..sWidtNZ0vTDj_a6WgjCwtIoHZeD4kpczOMdenG82mNkaeJBQwLHR3dRlv_2QHX2DQ1; HttpOnly; SameSite=None; Secure; Path=/; Domain=mistral.ai; Expires=Wed, 22 Jul 2026 10:38:02 GMT'), (b'mistral-correlation-id', b'019f894b-e925-724f-b7c5-2ad353caadb5'), (b'x-kong-request-id', b'019f894b-e925-724f-b7c5-2ad353caadb5'), (b'x-max-retry-attempts-reached', b'false'), (b'x-ratelimit-limit-tokens-minute', b'25000'), (b'x-ratelimit-remaining-tokens-minute', b'23434'), (b'x-ratelimit-tokens-query-cost', b'1566'), (b'x-ratelimit-limit-req-minute', b'50'), (b'x-ratelimit-remaining-req-minute', b'49'), (b'x-envoy-upstream-service-time', b'754'), (b'Server', b'cloudflare'), (b'access-control-allow-origin', b'*'), (b'x-kong-upstream-latency', b'755'), (b'x-kong-proxy-latency', b'11'), (b'X-Content-Type-Options', b'nosniff'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000; includeSubDomains; preload'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'a1f1a4477c90550b-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-22 15:38:01 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:38:01 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leaves employees entitled to
+2026-07-22 15:38:01 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:38:01 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:38:01 | INFO | tools.retriever_tool | Query: annual leaves employees entitled to
+2026-07-22 15:38:01 | INFO | ingestion.retriever | Retrieving documents for query: annual leaves employees entitled to
+2026-07-22 15:38:01 | DEBUG | httpcore.connection | connect_tcp.started host='api.cohere.com' port=443 local_address=None timeout=300 socket_options=None
+2026-07-22 15:38:01 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011F03CC4590>
+2026-07-22 15:38:01 | DEBUG | httpcore.connection | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011F02872750> server_hostname='api.cohere.com' timeout=300
+2026-07-22 15:38:01 | DEBUG | httpcore.connection | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011F03BA2C10>
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'access-control-expose-headers', b'X-Debug-Trace-ID'), (b'cache-control', b'no-cache, no-store, no-transform, must-revalidate, private, max-age=0'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'expires', b'Thu, 01 Jan 1970 00:00:00 GMT'), (b'num_chars', b'35'), (b'num_tokens', b'5'), (b'pragma', b'no-cache'), (b'vary', b'Origin,Accept-Encoding'), (b'x-accel-expires', b'0'), (b'x-debug-trace-id', b'22ea17ab3a51a5b25eb7e5c9dab5c648'), (b'x-endpoint-monthly-call-limit', b'1000'), (b'x-trial-endpoint-call-limit', b'100'), (b'x-trial-endpoint-call-remaining', b'97'), (b'date', b'Wed, 22 Jul 2026 10:08:02 GMT'), (b'x-envoy-upstream-service-time', b'39'), (b'server', b'envoy'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-07-22 15:38:01 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:38:01 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Distance Score: 0.9628 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Score: 0.9628 | Threshold Passed: True
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Distance Score: 0.9900 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Score: 0.9900 | Threshold Passed: True
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Distance Score: 0.9944 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Score: 0.9944 | Threshold Passed: True
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Distance Score: 1.0873 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Score: 1.0873 | Threshold Passed: True
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Distance Score: 1.1201 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:02 | INFO | ingestion.retriever | Score: 1.1201 | Threshold Passed: True
+2026-07-22 15:38:02 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:38:02 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:38:02 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.9628
+2026-07-22 15:38:02 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:02 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:38:02 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:38:02 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:38:02 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 22 Jul 2026 10:08:04 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'X-Content-Type-Options', b'nosniff'), (b'mistral-correlation-id', b'019f894b-f0ee-744a-87d7-79a0dcde5a99'), (b'x-kong-request-id', b'019f894b-f0ee-744a-87d7-79a0dcde5a99'), (b'x-max-retry-attempts-reached', b'false'), (b'x-ratelimit-limit-tokens-minute', b'25000'), (b'x-ratelimit-remaining-tokens-minute', b'21787'), (b'x-ratelimit-tokens-query-cost', b'1647'), (b'x-ratelimit-limit-req-minute', b'50'), (b'x-ratelimit-remaining-req-minute', b'48'), (b'x-envoy-upstream-service-time', b'715'), (b'Server', b'cloudflare'), (b'access-control-allow-origin', b'*'), (b'x-kong-upstream-latency', b'716'), (b'x-kong-proxy-latency', b'18'), (b'Strict-Transport-Security', b'max-age=15552000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'a1f1a45409ac550b-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-22 15:38:03 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:38:03 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leave entitlement for employees
+2026-07-22 15:38:03 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:38:03 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:38:03 | INFO | tools.retriever_tool | Query: annual leave entitlement for employees
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Retrieving documents for query: annual leave entitlement for employees
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'access-control-expose-headers', b'X-Debug-Trace-ID'), (b'cache-control', b'no-cache, no-store, no-transform, must-revalidate, private, max-age=0'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'expires', b'Thu, 01 Jan 1970 00:00:00 GMT'), (b'num_chars', b'38'), (b'num_tokens', b'7'), (b'pragma', b'no-cache'), (b'vary', b'Origin,Accept-Encoding'), (b'x-accel-expires', b'0'), (b'x-debug-trace-id', b'882a5e54eb4f208023ad7d1f86ca4900'), (b'x-endpoint-monthly-call-limit', b'1000'), (b'x-trial-endpoint-call-limit', b'100'), (b'x-trial-endpoint-call-remaining', b'96'), (b'date', b'Wed, 22 Jul 2026 10:08:04 GMT'), (b'x-envoy-upstream-service-time', b'45'), (b'server', b'envoy'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-07-22 15:38:03 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:38:03 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Distance Score: 0.7980 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Score: 0.7980 | Threshold Passed: True
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Distance Score: 0.8134 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Score: 0.8134 | Threshold Passed: True
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Distance Score: 0.9991 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Score: 0.9991 | Threshold Passed: True
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Distance Score: 1.0033 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Score: 1.0033 | Threshold Passed: True
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Distance Score: 1.0543 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:38:03 | INFO | ingestion.retriever | Score: 1.0543 | Threshold Passed: True
+2026-07-22 15:38:03 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:38:03 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:38:03 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.7980
+2026-07-22 15:38:20 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 15:38:22 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 15:38:22 | INFO | agents.dependencies | Initializing agent dependencies.
+2026-07-22 15:38:22 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 15:38:24 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 15:38:24 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 15:38:24 | DEBUG | chromadb.config | Starting component System
+2026-07-22 15:38:24 | DEBUG | chromadb.config | Starting component Posthog
+2026-07-22 15:38:24 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 15:38:24 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 15:38:24 | INFO | agents.dependencies | Agent dependencies initialized successfully.
+2026-07-22 15:38:24 | DEBUG | asyncio | Using proactor: IocpProactor
+2026-07-22 15:38:24 | DEBUG | httpcore.connection | connect_tcp.started host='api.mistral.ai' port=443 local_address=None timeout=300.0 socket_options=None
+2026-07-22 15:38:24 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000027B19AD8C20>
+2026-07-22 15:38:24 | DEBUG | httpcore.connection | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000027B187D4A70> server_hostname='api.mistral.ai' timeout=300.0
+2026-07-22 15:38:24 | DEBUG | httpcore.connection | start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000027B19ABAE90>
+2026-07-22 15:38:24 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:24 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:38:24 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:38:24 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:38:24 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 22 Jul 2026 10:08:26 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'mistral-correlation-id', b'019f894c-4947-7e9c-8894-273b179a9dde'), (b'x-kong-request-id', b'019f894c-4947-7e9c-8894-273b179a9dde'), (b'x-max-retry-attempts-reached', b'false'), (b'x-ratelimit-limit-tokens-minute', b'25000'), (b'x-ratelimit-remaining-tokens-minute', b'20221'), (b'x-ratelimit-tokens-query-cost', b'1566'), (b'x-ratelimit-limit-req-minute', b'50'), (b'x-ratelimit-remaining-req-minute', b'47'), (b'x-envoy-upstream-service-time', b'389'), (b'Server', b'cloudflare'), (b'access-control-allow-origin', b'*'), (b'x-kong-upstream-latency', b'390'), (b'x-kong-proxy-latency', b'14'), (b'cf-cache-status', b'DYNAMIC'), (b'set-cookie', b'__cf_bm=rkjwYkGa4JoRS8DQjpxTbrnaqZK2oHwWjkmFInu4rX0-1784714905.7806325-1.0.1.1-DnyUO8p9.5ht.GmcaNzY7GPv_xcSL2vzkmQoCS39qq3sCbgh51VtjAY.NzUK35n0mK4Sj8RQaWiOFJrQ7cbNlFO0QLrM4Zq163sv94V7et7lLnMNiYWK7QO.vP3Yaatp; HttpOnly; SameSite=None; Secure; Path=/; Domain=mistral.ai; Expires=Wed, 22 Jul 2026 10:38:26 GMT'), (b'Strict-Transport-Security', b'max-age=15552000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'a1f1a4e11c844bda-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-22 15:38:25 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:38:25 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leaves employees entitled to
+2026-07-22 15:38:25 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:38:25 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:38:25 | INFO | tools.retriever_tool | Query: annual leaves employees entitled to
+2026-07-22 15:38:25 | INFO | ingestion.retriever | Retrieving documents for query: annual leaves employees entitled to
+2026-07-22 15:38:25 | DEBUG | httpcore.connection | connect_tcp.started host='api.cohere.com' port=443 local_address=None timeout=300 socket_options=None
+2026-07-22 15:38:25 | DEBUG | httpcore.connection | connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027B19C44590>
+2026-07-22 15:38:25 | DEBUG | httpcore.connection | start_tls.started ssl_context=<ssl.SSLContext object at 0x0000027B187F2750> server_hostname='api.cohere.com' timeout=300
+2026-07-22 15:38:25 | DEBUG | httpcore.connection | start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000027B19B22C10>
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:38:25 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'access-control-expose-headers', b'X-Debug-Trace-ID'), (b'cache-control', b'no-cache, no-store, no-transform, must-revalidate, private, max-age=0'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'expires', b'Thu, 01 Jan 1970 00:00:00 GMT'), (b'num_chars', b'35'), (b'num_tokens', b'5'), (b'pragma', b'no-cache'), (b'vary', b'Origin,Accept-Encoding'), (b'x-accel-expires', b'0'), (b'x-debug-trace-id', b'38a38cccac2a5b46bc6a9b7cf27b9c08'), (b'x-endpoint-monthly-call-limit', b'1000'), (b'x-trial-endpoint-call-limit', b'100'), (b'x-trial-endpoint-call-remaining', b'95'), (b'date', b'Wed, 22 Jul 2026 10:08:27 GMT'), (b'x-envoy-upstream-service-time', b'133'), (b'server', b'envoy'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-07-22 15:38:26 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Distance Score: 0.9629 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Score: 0.9629 | Threshold Passed: True
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Distance Score: 0.9894 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Score: 0.9894 | Threshold Passed: True
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Distance Score: 0.9940 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Score: 0.9940 | Threshold Passed: True
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Distance Score: 1.0868 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Score: 1.0868 | Threshold Passed: True
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Distance Score: 1.1197 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:26 | INFO | ingestion.retriever | Score: 1.1197 | Threshold Passed: True
+2026-07-22 15:38:26 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:38:26 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:38:26 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.9629
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:38:26 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 22 Jul 2026 10:08:28 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'mistral-correlation-id', b'019f894c-4f47-721b-a7dd-c1fb4af4d8de'), (b'x-kong-request-id', b'019f894c-4f47-721b-a7dd-c1fb4af4d8de'), (b'x-max-retry-attempts-reached', b'false'), (b'x-ratelimit-limit-tokens-minute', b'25000'), (b'x-ratelimit-remaining-tokens-minute', b'18576'), (b'x-ratelimit-tokens-query-cost', b'1645'), (b'x-ratelimit-limit-req-minute', b'50'), (b'x-ratelimit-remaining-req-minute', b'46'), (b'x-envoy-upstream-service-time', b'782'), (b'Server', b'cloudflare'), (b'access-control-allow-origin', b'*'), (b'x-kong-upstream-latency', b'783'), (b'x-kong-proxy-latency', b'15'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Strict-Transport-Security', b'max-age=15552000; includeSubDomains; preload'), (b'Content-Encoding', b'gzip'), (b'CF-RAY', b'a1f1a4eacd394bda-DEL'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-22 15:38:27 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:38:27 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leaves employees entitled to
+2026-07-22 15:38:27 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:38:27 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:38:27 | INFO | tools.retriever_tool | Query: annual leaves employees entitled to
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Retrieving documents for query: annual leaves employees entitled to
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | send_request_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | send_request_headers.complete
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | send_request_body.started request=<Request [b'POST']>
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | send_request_body.complete
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | receive_response_headers.started request=<Request [b'POST']>
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'access-control-expose-headers', b'X-Debug-Trace-ID'), (b'cache-control', b'no-cache, no-store, no-transform, must-revalidate, private, max-age=0'), (b'content-encoding', b'gzip'), (b'content-type', b'application/json'), (b'expires', b'Thu, 01 Jan 1970 00:00:00 GMT'), (b'num_chars', b'35'), (b'num_tokens', b'5'), (b'pragma', b'no-cache'), (b'vary', b'Origin,Accept-Encoding'), (b'x-accel-expires', b'0'), (b'x-debug-trace-id', b'798661ef213d42e360baca9a45a864eb'), (b'x-endpoint-monthly-call-limit', b'1000'), (b'x-trial-endpoint-call-limit', b'100'), (b'x-trial-endpoint-call-remaining', b'94'), (b'date', b'Wed, 22 Jul 2026 10:08:28 GMT'), (b'x-envoy-upstream-service-time', b'29'), (b'server', b'envoy'), (b'Via', b'1.1 google'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+2026-07-22 15:38:27 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | receive_response_body.started request=<Request [b'POST']>
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | receive_response_body.complete
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | response_closed.started
+2026-07-22 15:38:27 | DEBUG | httpcore.http11 | response_closed.complete
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Distance Score: 0.9629 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Score: 0.9629 | Threshold Passed: True
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Distance Score: 0.9894 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Score: 0.9894 | Threshold Passed: True
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Distance Score: 0.9940 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Score: 0.9940 | Threshold Passed: True
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Distance Score: 1.0868 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Score: 1.0868 | Threshold Passed: True
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Distance Score: 1.1197 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:38:27 | INFO | ingestion.retriever | Score: 1.1197 | Threshold Passed: True
+2026-07-22 15:38:27 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:38:27 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:38:27 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.9629
+2026-07-22 15:51:23 | INFO | __main__ | Starting ingestion pipeline.
+2026-07-22 15:51:23 | INFO | ingestion.loader | Found 6 PDF files.
+2026-07-22 15:51:23 | INFO | ingestion.loader | Loading 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loaded 01_Leave_and_Attendance_Policy.pdf (2 pages)
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loading 02_Remote_and_Hybrid_Work_Policy.pdf
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loaded 02_Remote_and_Hybrid_Work_Policy.pdf (2 pages)
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loading 03_Code_of_Conduct.pdf
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loaded 03_Code_of_Conduct.pdf (2 pages)
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loading 04_Travel_and_Expense_Policy.pdf
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loaded 04_Travel_and_Expense_Policy.pdf (2 pages)
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loading 05_IT_and_Data_Security_Policy.pdf
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loaded 05_IT_and_Data_Security_Policy.pdf (2 pages)
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loading 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:51:25 | INFO | ingestion.loader | Loaded 06_Employee_Benefits_Guide.pdf (1 pages)
+2026-07-22 15:51:25 | INFO | ingestion.loader | Successfully loaded 11 pages from 6 PDFs.
+2026-07-22 15:51:25 | INFO | ingestion.splitter | DocumentSplitter initialized (chunk_size=800, chunk_overlap=150)
+2026-07-22 15:51:25 | INFO | ingestion.splitter | Splitting 11 documents.
+2026-07-22 15:51:25 | INFO | ingestion.splitter | Generated 25 chunks.
+2026-07-22 15:51:25 | INFO | ingestion.splitter | Metadata added to all chunks.
+2026-07-22 15:51:25 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 15:51:26 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 15:51:26 | INFO | ingestion.vector_store | Creating Chroma vector store with 25 chunks.
+2026-07-22 15:51:28 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:51:29 | INFO | ingestion.vector_store | Vector store created successfully.
+2026-07-22 15:51:29 | INFO | ingestion.vector_store | Persisted at: D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 15:51:29 | INFO | __main__ | Ingestion pipeline completed successfully.
+2026-07-22 15:52:28 | INFO | agents.policy_agent | Initializing Policy Agent...
+2026-07-22 15:52:31 | INFO | agents.policy_agent | Policy Agent initialized successfully.
+2026-07-22 15:52:31 | INFO | ingestion.embedder | Initializing Cohere embedding model: embed-english-v3.0
+2026-07-22 15:52:34 | INFO | ingestion.embedder | Embedding model initialized successfully.
+2026-07-22 15:52:34 | INFO | ingestion.vector_store | Loading vector store from D:\HR-IT-Policy-Assistant\data\chroma_db
+2026-07-22 15:52:35 | INFO | ingestion.vector_store | Vector store loaded successfully.
+2026-07-22 15:52:35 | INFO | ingestion.retriever | Policy Retriever initialized successfully.
+2026-07-22 15:52:45 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:52:45 | INFO | agents.tool_registry | Retriever Tool invoked for query: annual leaves employees entitled to
+2026-07-22 15:52:45 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:52:45 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:52:45 | INFO | tools.retriever_tool | Query: annual leaves employees entitled to
+2026-07-22 15:52:45 | INFO | ingestion.retriever | Retrieving documents for query: annual leaves employees entitled to
+2026-07-22 15:52:46 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Distance Score: 0.9620 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Score: 0.9620 | Threshold Passed: True
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Distance Score: 0.9902 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Score: 0.9902 | Threshold Passed: True
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Distance Score: 0.9972 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Score: 0.9972 | Threshold Passed: True
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Distance Score: 1.0855 | Source: 06_Employee_Benefits_Guide.pdf
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Score: 1.0855 | Threshold Passed: True
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Distance Score: 1.1204 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:52:46 | INFO | ingestion.retriever | Score: 1.1204 | Threshold Passed: True
+2026-07-22 15:52:46 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:52:46 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:52:46 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.9620
+2026-07-22 15:52:46 | INFO | tools.retriever_tool | Chunk 2 | 06_Employee_Benefits_Guide.pdf | Page 1 | Score 0.9902
+2026-07-22 15:52:46 | INFO | tools.retriever_tool | Chunk 3 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 0.9972
+2026-07-22 15:52:46 | INFO | tools.retriever_tool | Chunk 4 | 06_Employee_Benefits_Guide.pdf | Page 1 | Score 1.0855
+2026-07-22 15:52:46 | INFO | tools.retriever_tool | Chunk 5 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 1.1204
+2026-07-22 15:52:46 | INFO | agents.tool_registry | Retriever returned 5 chunk(s).
+2026-07-22 15:52:46 | INFO | agents.tool_registry | Formatted 5 retrieved chunk(s).
+2026-07-22 15:52:53 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:54:18 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 15:54:18 | INFO | agents.tool_registry | Retriever Tool invoked for query: notice period for resignation
+2026-07-22 15:54:18 | INFO | utils.audit_logger | TOOL INVOKED: Policy Retriever Tool
+2026-07-22 15:54:18 | INFO | tools.retriever_tool | PolicyRetrieverTool invoked.
+2026-07-22 15:54:18 | INFO | tools.retriever_tool | Query: notice period for resignation
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Retrieving documents for query: notice period for resignation
+2026-07-22 15:54:18 | INFO | httpx | HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Retrieved 5 candidate chunks.
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Distance Score: 0.6228 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Score: 0.6228 | Threshold Passed: True
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Distance Score: 1.0398 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Score: 1.0398 | Threshold Passed: True
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Distance Score: 1.0900 | Source: 03_Code_of_Conduct.pdf
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Score: 1.0900 | Threshold Passed: True
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Distance Score: 1.2337 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Score: 1.2337 | Threshold Passed: True
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Distance Score: 1.2649 | Source: 01_Leave_and_Attendance_Policy.pdf
+2026-07-22 15:54:18 | INFO | ingestion.retriever | Score: 1.2649 | Threshold Passed: True
+2026-07-22 15:54:18 | INFO | ingestion.retriever | 5 chunks passed grounding threshold.
+2026-07-22 15:54:18 | INFO | tools.retriever_tool | 5 relevant chunk(s) retrieved.
+2026-07-22 15:54:18 | INFO | tools.retriever_tool | Chunk 1 | 01_Leave_and_Attendance_Policy.pdf | Page 2 | Score 0.6228
+2026-07-22 15:54:18 | INFO | tools.retriever_tool | Chunk 2 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 1.0398
+2026-07-22 15:54:18 | INFO | tools.retriever_tool | Chunk 3 | 03_Code_of_Conduct.pdf | Page 1 | Score 1.0900
+2026-07-22 15:54:18 | INFO | tools.retriever_tool | Chunk 4 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 1.2337
+2026-07-22 15:54:18 | INFO | tools.retriever_tool | Chunk 5 | 01_Leave_and_Attendance_Policy.pdf | Page 1 | Score 1.2649
+2026-07-22 15:54:18 | INFO | agents.tool_registry | Retriever returned 5 chunk(s).
+2026-07-22 15:54:18 | INFO | agents.tool_registry | Formatted 5 retrieved chunk(s).
+2026-07-22 15:54:25 | INFO | httpx | HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
